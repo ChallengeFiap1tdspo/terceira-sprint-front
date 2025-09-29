@@ -6,30 +6,30 @@ const Footer: React.FC = () => {
       <div className="max-w-6xl mx-auto px-6 py-10 flex flex-col md:flex-row justify-between gap-12">
        
         <div className="md:w-1/2">
-          <h3 className="text-xl font-semibold mb-4 relative pb-2 !text-white after:block after:absolute after:left-0 after:bottom-0 after:w-12 after:h-0.5 after:bg-[#00a1e0]"style={{ color: "white" }}>
+          <h3 className="text-xl font-semibold mb-4 relative pb-2 !text-white after:block after:absolute after:left-0 after:bottom-0 after:w-12 after:h-0.5 after:bg-[#00a1e0] text-[#f8f9fa]">
             Teleconsulta - Hospital Das Clínicas
           </h3>
-          <p className="mb-3 leading-relaxed !text-white"style={{ color: "white" }}>
+          <p className="mb-3 leading-relaxed !text-white text-[#f8f9fa]">
             Consultas médicas online acessíveis para toda a comunidade.
           </p>
-          <p className="leading-relaxed !text-white"style={{ color: "white" }}>
+          <p className="leading-relaxed !text-white text-[#f8f9fa]">
             Comprometidos com a saúde e bem-estar dos nossos pacientes.
           </p>
         </div>
 
         
         <div className="md:w-1/2">
-          <h3 className="text-xl font-semibold mb-4 relative pb-2 !text-white after:block after:absolute after:left-0 after:bottom-0 after:w-12 after:h-0.5 after:bg-[#00a1e0]"style={{ color: "white" }}>
+          <h3 className="text-xl font-semibold mb-4 relative pb-2 !text-white after:block after:absolute after:left-0 after:bottom-0 after:w-12 after:h-0.5 after:bg-[#00a1e0] text-[#f8f9fa]">
             Contato
           </h3>
-         <p className="mb-2 !text-white" style={{ color: "white" }}>(11) 1111-1111</p>
-          <p className="mb-2 !text-white"style={{ color: "white" }}>(11) 99999-9999 (WhatsApp)</p>
-          <p className="!text-white"style={{ color: "white" }}>teleconsulta@hsp.com.br</p>
+         <p className="mb-2 !text-white text-[#f8f9fa]" >(11) 1111-1111</p>
+          <p className="mb-2 !text-white text-[#f8f9fa]">(11) 99999-9999 (WhatsApp)</p>
+          <p className="!text-white text-[#f8f9fa]">teleconsulta@hsp.com.br</p>
         </div>
       </div>
 
 
-      <div className="border-t border-white/20 mt-8 pt-5 text-center text-sm !text-white"style={{ color: "white" }}>
+      <div className="border-t border-white/20 mt-8 pt-5 text-center text-sm !text-white text-[#f8f9fa]">
         © Hospital Das Clínicas. Todos os direitos reservados.
       </div>
     </footer>
