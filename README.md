@@ -27,14 +27,13 @@ Este projeto tem como objetivo criar uma interface moderna e acessível para o H
 ### 2. Layout e conteúdo adequados
 - A organização do conteúdo segue uma hierarquia clara para cada resolução.
 - Navegação simplificada em telas pequenas.
-- Componentes ajustam sua largura e altura automaticamente conforme o viewport.
+
 
 ---
 
 ## 🛠️ Tecnologias Utilizadas
 - **React.js** – Criação de componentes e gerenciamento de rotas.
 - **Tailwind CSS** – Estilização responsiva e utilitários CSS.
-- **JavaScript (ES6+)** – Lógica de interação.
 
 ---
 
