@@ -16,8 +16,8 @@ const Header: React.FC = () => {
 
   return (
     <header
-      className="w-full border-b-[1px] border-b-[#817f81]"
-      style={{ backgroundColor: "#ffffff" }}
+      className="w-full border-b-[1px] border-b-[#817f81] text-[#f8f9fa]"
+      
     >
       <div className="w-[90%] mx-auto flex items-center justify-start py-4">
         <a href="/" className="flex items-center flex-shrink-0">
@@ -30,8 +30,8 @@ const Header: React.FC = () => {
 
         <nav className="ml-4" aria-label="Menu principal">
           <ul
-            className="flex items-center gap-8 whitespace-nowrap list-none m-0 p-0"
-            style={{ gap: "1.75rem" }}
+            className=" flex gap-[1.75rem] flex items-center gap-8 whitespace-nowrap list-none m-0 p-0"
+            
           >
             <li>
               <a href="/" className={getLinkClass("/")}>
