@@ -1,76 +1,65 @@
-import React from "react";
+import React, { useState } from "react";
 
 const FormContato: React.FC = () => {
+  const [enviado, setEnviado] = useState(false);
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    setEnviado(true);
+    setTimeout(() => setEnviado(false), 3000); // limpa msg depois de 3s
+  };
+
   return (
-    <div className="bg-gray-50 p-8 rounded-2xl shadow-lg border border-gray-200">
-      <h2 className="text-2xl font-bold text-[#005b96] mb-6 text-center">
-        Fale Conosco
-      </h2>
+    <form
+      onSubmit={handleSubmit}
+      className="bg-white p-8 rounded-2xl shadow-lg space-y-6"
+    >
+      <div>
+        <label className="block text-sm font-medium text-gray-700 mb-1">
+          Nome
+        </label>
+        <input
+          type="text"
+          required
+          className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:ring-2 focus:ring-[#005b96] focus:outline-none"
+        />
+      </div>
 
-      <form className="space-y-4">
+      <div>
+        <label className="block text-sm font-medium text-gray-700 mb-1">
+          E-mail
+        </label>
+        <input
+          type="email"
+          required
+          className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:ring-2 focus:ring-[#005b96] focus:outline-none"
+        />
+      </div>
 
-        <div>
-          <label htmlFor="nome" className="block text-sm font-medium text-gray-700">
-            Nome
-          </label>
-          <input
-            type="text"
-            id="nome"
-            placeholder="Digite seu nome"
-            className="mt-1 block w-full rounded-lg border border-gray-300 px-4 py-2 shadow-sm focus:border-[#005b96] focus:ring focus:ring-[#005b96]/30"
-          />
-        </div>
+      <div>
+        <label className="block text-sm font-medium text-gray-700 mb-1">
+          Mensagem
+        </label>
+        <textarea
+          required
+          rows={4}
+          className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:ring-2 focus:ring-[#005b96] focus:outline-none"
+        ></textarea>
+      </div>
 
-  
-        <div>
-          <label htmlFor="email" className="block text-sm font-medium text-gray-700">
-            E-mail
-          </label>
-          <input
-            type="email"
-            id="email"
-            placeholder="Digite seu e-mail"
-            className="mt-1 block w-full rounded-lg border border-gray-300 px-4 py-2 shadow-sm focus:border-[#005b96] focus:ring focus:ring-[#005b96]/30"
-          />
-        </div>
+      <button
+        type="submit"
+        className="w-full bg-[#005b96] text-white py-3 rounded-lg text-lg font-semibold hover:bg-[#004272] transition"
+      >
+        Enviar
+      </button>
 
-   
-        <div>
-          <label htmlFor="telefone" className="block text-sm font-medium text-gray-700">
-            Telefone
-          </label>
-          <input
-            type="tel"
-            id="telefone"
-            placeholder="(11) 99999-9999"
-            className="mt-1 block w-full rounded-lg border border-gray-300 px-4 py-2 shadow-sm focus:border-[#005b96] focus:ring focus:ring-[#005b96]/30"
-          />
-        </div>
-
- 
-        <div>
-          <label htmlFor="mensagem" className="block text-sm font-medium text-gray-700">
-            Mensagem
-          </label>
-          <textarea
-            id="mensagem"
-            rows={4}
-            placeholder="Digite sua mensagem..."
-            className="mt-1 block w-full rounded-lg border border-gray-300 px-4 py-2 shadow-sm focus:border-[#005b96] focus:ring focus:ring-[#005b96]/30"
-          ></textarea>
-        </div>
-
- 
-        <div className="text-center">
-          <button
-            type="submit"
-            className="bg-[#005b96] text-white px-6 py-2 rounded-xl shadow-md hover:bg-[#00487a] transition duration-300"
-          >
-            Enviar
-          </button>
-        </div>
-      </form>
-    </div>
+      {enviado && (
+        <p className="text-green-600 text-center font-medium mt-2">
+          ✅ Mensagem enviada com sucesso!
+        </p>
+      )}
+    </form>
   );
 };
 
