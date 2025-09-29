@@ -44,7 +44,7 @@ const FAQ: React.FC = () => {
                   </span>
                 </button>
 
-                {/* Resposta - Como uma gaveta que só aparece quando abre */}
+                
                 {openIndex === index && (
                   <div className="bg-white border-t border-blue-300 animate-slideDown">
                     <div className="px-8 py-6 text-blue-900 text-base md:text-lg leading-relaxed">

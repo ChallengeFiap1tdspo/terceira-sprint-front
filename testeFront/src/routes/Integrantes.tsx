@@ -26,7 +26,7 @@ const Integrantes: React.FC = () => {
               src={i.foto}
               alt={`Foto de ${i.nome}`}
               className="w-[160px] h-[160px] rounded-full object-cover border-4 border-[#e8f0fe] mb-10"
-              // style={{ width: "160px", height: "160px" }}
+              
             />
             <h3 className="text-2xl font-semibold text-[#003d66] mb-6">{i.nome}</h3>
             <p className="text-gray-600 text-base mb-3">{i.rm}</p>

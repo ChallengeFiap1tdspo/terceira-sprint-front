@@ -56,7 +56,7 @@ const Contato: React.FC = () => {
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.331272137361!2d-46.6700000!3d-23.5615000!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c93a7d0c1f%3A0x3f8e6a3c9f30a7b8!2sAv.%20Dr.%20En%C3%A9as%20Carvalho%20de%20Aguiar%2C%20255%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1632412345678!5m2!1spt-BR!2sbr"
           width="100%"
           height="250"
-          // style={{ border: 0 }}
+        
           loading="lazy"
           allowFullScreen
         ></iframe>
