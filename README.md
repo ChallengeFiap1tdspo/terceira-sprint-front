@@ -39,7 +39,8 @@ Este projeto tem como objetivo criar uma interface moderna e acessível para o H
 ---
 
 ## 📁 Estrutura do Projeto
-'''
+
+```
 testeFront/
 ├─ .gitignore
 ├─ README.md
@@ -54,14 +55,14 @@ testeFront/
 ├─ tsconfig.node.json
 ├─ vite.config.ts
 └─ src/
-    ├─ Components
-    ├─ data
-    ├─ img
-    ├─ routes
-    ├─ App.tsx
-    ├─ main.tsx
-    └─ vite-env.d.ts
-'''
+├─ Components
+├─ data
+├─ img
+├─ routes
+├─ App.tsx
+├─ main.tsx
+└─ vite-env.d.ts
+```
 
 
 
