@@ -7,7 +7,7 @@ const Header: React.FC = () => {
   const active = "bg-[#00a1e0] text-white";
   const inactive = "text-[#005b96] hover:bg-gray-100";
 
-  // Função para verificar a rota atual e aplicar estilo "ativo"
+
   const getLinkClass = (path: string) => {
     return `${linkBase} ${
       window.location.pathname === path ? active : inactive

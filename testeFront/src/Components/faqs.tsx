@@ -1,4 +1,4 @@
-// src/Components/faqs.tsx
+
 import React from "react";
 
 export interface FAQItem {

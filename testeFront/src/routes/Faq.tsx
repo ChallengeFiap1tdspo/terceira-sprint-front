@@ -15,12 +15,12 @@ const FAQ: React.FC = () => {
     <div className="flex flex-col bg-white min-h-screen">
       <main className="flex-grow">
         <section className="mx-auto px-6 sm:px-8 lg:px-10 py-10 max-w-7xl">
-          {/* Título */}
+
           <h2 className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-blue-700 mb-12 text-center">
             Perguntas Frequentes
           </h2>
 
-          {/* Perguntas */}
+       
           <div className="flex flex-col space-y-8">
             {faqs.map((faq, index) => (
               <div
@@ -56,7 +56,7 @@ const FAQ: React.FC = () => {
             ))}
           </div>
 
-          {/* Fale Conosco */}
+        
           <div className="mt-16 text-center">
             <h3 className="text-blue-900 text-xl font-bold mb-3">
               Não encontrou sua dúvida?

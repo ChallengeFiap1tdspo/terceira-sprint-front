@@ -8,7 +8,7 @@ const FormContato: React.FC = () => {
       </h2>
 
       <form className="space-y-4">
-        {/* Nome */}
+
         <div>
           <label htmlFor="nome" className="block text-sm font-medium text-gray-700">
             Nome
@@ -21,7 +21,7 @@ const FormContato: React.FC = () => {
           />
         </div>
 
-        {/* E-mail */}
+  
         <div>
           <label htmlFor="email" className="block text-sm font-medium text-gray-700">
             E-mail
@@ -34,7 +34,7 @@ const FormContato: React.FC = () => {
           />
         </div>
 
-        {/* Telefone */}
+   
         <div>
           <label htmlFor="telefone" className="block text-sm font-medium text-gray-700">
             Telefone
@@ -47,7 +47,7 @@ const FormContato: React.FC = () => {
           />
         </div>
 
-        {/* Mensagem */}
+ 
         <div>
           <label htmlFor="mensagem" className="block text-sm font-medium text-gray-700">
             Mensagem
@@ -60,7 +60,7 @@ const FormContato: React.FC = () => {
           ></textarea>
         </div>
 
-        {/* Botão */}
+ 
         <div className="text-center">
           <button
             type="submit"
