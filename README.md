@@ -19,12 +19,12 @@ Este projeto tem como objetivo criar uma interface moderna e acessível para o H
 
 ## 🎨 Responsividade e Adaptabilidade
 
-### i. Funcionalidade e aparência adequada
+### 1. Funcionalidade e aparência adequada
 - Todos os elementos permanecem acessíveis e funcionais em qualquer dispositivo.
 - Botões, formulários e menus possuem espaçamento adequado para telas sensíveis ao toque.
 - Imagens e ícones utilizam **tamanhos relativos**, evitando distorções.
 
-### ii. Layout e conteúdo adequados
+### 2. Layout e conteúdo adequados
 - A organização do conteúdo segue uma hierarquia clara para cada resolução.
 - Navegação simplificada em telas pequenas.
 - Componentes ajustam sua largura e altura automaticamente conforme o viewport.
