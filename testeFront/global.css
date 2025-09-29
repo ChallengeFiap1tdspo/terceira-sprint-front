@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  *, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html, body, #root {
+    height: 100%;
+  }
+
+  main {
+    flex-grow: 1;
+  }
+}
+
+@layer components {
+  .app-body {
+ 
+    color: #1f2937; 
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+                 "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+    line-height: 1.625;
+    font-size: 1rem;
+  }
+
+  .contact-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .contact-left {
+    width: 100%;
+  }
+
+  .contact-right {
+    width: 100%;
+  }
+
+  .form-fixed-width {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .map-embed {
+    width: 100%;
+    height: 250px;
+    border: 0;
+    display: block;
+  }
+
+  @screen lg {
+    .contact-grid {
+      grid-template-columns: 1fr minmax(360px, 420px);
+      gap: 2rem;
+      align-items: start;
+    }
+
+    .contact-right {
+      justify-self: end;
+    }
+
+    .form-fixed-width {
+      max-width: 420px;
+    }
+  }
+}
