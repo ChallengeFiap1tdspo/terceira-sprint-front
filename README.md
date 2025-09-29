@@ -1,7 +1,7 @@
 # Projeto Front-End – Hospital das Clínicas
 
 > Repositório do desafio proposto para desenvolvimento de uma aplicação web responsiva voltada ao **Hospital das Clínicas**, atendendo aos critérios de responsividade e adaptabilidade.  
-> **Repositório:** [terceira-sprint-front](https://github.com/ChallengeFiap1tdspo/terceira-sprint-front.git)
+
 
 ---
 
