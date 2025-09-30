@@ -56,22 +56,6 @@ const FAQ: React.FC = () => {
             ))}
           </div>
 
-        
-          <div className="mt-16 text-center">
-            <h3 className="text-blue-900 text-xl font-bold mb-3">
-              Não encontrou sua dúvida?
-            </h3>
-            <p className="mb-6 text-blue-800 text-base leading-relaxed">
-              Entre em contato conosco e teremos prazer em ajudar!
-            </p>
-
-            <Link
-              to="/contato"
-              className="inline-flex items-center px-8 py-3 rounded-full transition-all duration-300 transform hover:-translate-y-1 hover:shadow-xl bg-gradient-to-r from-emerald-500 to-teal-600 text-white font-semibold text-lg border-2 border-emerald-600 focus:outline-none focus:ring-4 focus:ring-emerald-300"
-            >
-              📞 Fale Conosco
-            </Link>
-          </div>
         </section>
       </main>
     </div>
