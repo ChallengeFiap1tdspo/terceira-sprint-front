@@ -25,8 +25,8 @@ const FAQ: React.FC = () => {
             {faqs.map((faq, index) => (
               <div
                 key={index}
-                className="w-[60%] mx-auto rounded-2xl shadow-lg transition-all duration-300 hover:shadow-2xl border border-blue-300 overflow-hidden"
-                style={{ marginTop: "2%", marginBottom: "2%" }}
+                className="my-[2%] w-[60%] mx-auto rounded-2xl shadow-lg transition-all duration-300 hover:shadow-2xl border border-blue-300 overflow-hidden"
+               
               >
                 <button
                   onClick={() => handleClick(index)}
