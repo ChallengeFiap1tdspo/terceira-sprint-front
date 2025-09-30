@@ -8,12 +8,12 @@ interface ContactIconProps {
 
 const ContactIcon: React.FC<ContactIconProps> = ({ icon, title, description }) => {
   return (
-    <div className="flex items-start gap-4 bg-white p-4 rounded-lg shadow-sm border border-gray-100">
-      <div className="flex items-center justify-center w-10 h-10 text-[#005b96]">
+    <div className="flex items-start gap-4">
+      <div className="flex items-center justify-center w-6 h-6 text-gray-600">
         {icon}
       </div>
       <div className="flex-1">
-        <h3 className="text-lg font-semibold text-[#005b96] mb-1">{title}</h3>
+        <h3 className="text-lg font-semibold text-gray-800 mb-1">{title}</h3>
         <p className="text-gray-600">{description}</p>
       </div>
     </div>

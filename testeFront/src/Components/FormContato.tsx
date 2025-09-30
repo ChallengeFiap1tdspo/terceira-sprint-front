@@ -55,7 +55,7 @@ const FormContato: React.FC = () => {
   };
 
   return (
-    <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
+    <div className="bg-white p-6 rounded-lg">
       <h2 className="text-xl font-bold text-[#005b96] mb-4">Envie uma Mensagem</h2>
       
       {messageSent && (
@@ -152,7 +152,7 @@ const FormContato: React.FC = () => {
         <button
           type="submit"
           disabled={isSubmitting}
-          className=" bg-[#00a1e0] py-[0.5rem] px-[.10rem] text-[1.2rem] text-[#f8f9fa]  rounded-[1rem] cursor-pointer"
+          className="w-full bg-[#00a1e0] py-3 text-white font-semibold rounded hover:bg-[#0088cc] transition-colors disabled:opacity-50"
         >
           {isSubmitting ? "Enviando..." : "Enviar Mensagem"}
         </button>
