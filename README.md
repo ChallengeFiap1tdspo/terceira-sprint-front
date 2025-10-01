@@ -68,6 +68,8 @@ testeFront/
 ---
 
 ## 🚀 Como Executar o Projeto
+Abra o cmd e execute:
+
 1. Clone o repositório:
    ```bash
    git clone https://github.com/ChallengeFiap1tdspo/terceira-sprint-front.git
