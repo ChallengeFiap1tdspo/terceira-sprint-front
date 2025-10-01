@@ -18,7 +18,6 @@ const FormContato: React.FC = () => {
   });
 
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [messageSent, setMessageSent] = useState(false);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     const { name, value } = e.target;
@@ -33,9 +32,14 @@ const FormContato: React.FC = () => {
     setIsSubmitting(true);
 
     try {
+     
       await new Promise(resolve => setTimeout(resolve, 2000));
       console.log("Dados do formulário:", formData);
-      setMessageSent(true);
+
+      // Exibe a mensagem de sucesso via alert
+      alert("Mensagem enviada com sucesso! Retornaremos em breve.");
+
+      // Reseta o formulário
       setFormData({
         nome: "",
         email: "",
@@ -43,12 +47,9 @@ const FormContato: React.FC = () => {
         assunto: "",
         mensagem: ""
       });
-      
-      setTimeout(() => {
-        setMessageSent(false);
-      }, 5000);
     } catch (error) {
       console.error("Erro ao enviar formulário:", error);
+      alert("Ocorreu um erro ao enviar. Tente novamente mais tarde.");
     } finally {
       setIsSubmitting(false);
     }
@@ -57,12 +58,6 @@ const FormContato: React.FC = () => {
   return (
     <div className="bg-white p-6 rounded-lg">
       <h2 className="text-xl font-bold text-[#005b96] mb-4">Envie uma Mensagem</h2>
-      
-      {messageSent && (
-        <div className="mb-4 p-3 bg-green-100 border border-green-400 text-green-700 rounded">
-          Mensagem enviada com sucesso! Retornaremos em breve.
-        </div>
-      )}
 
       <form onSubmit={handleSubmit} className="space-y-4">
         <div>
