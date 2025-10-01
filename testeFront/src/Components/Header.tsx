@@ -7,7 +7,6 @@ const Header: React.FC = () => {
   const active = "bg-[#00a1e0] text-white";
   const inactive = "text-[#005b96] hover:bg-gray-100";
 
-
   const getLinkClass = (path: string) => {
     return `${linkBase} ${
       window.location.pathname === path ? active : inactive
@@ -15,10 +14,7 @@ const Header: React.FC = () => {
   };
 
   return (
-    <header
-      className="w-full border-b-[1px] border-b-[#817f81] text-[#f8f9fa]"
-      
-    >
+    <header className="w-full border-b-[1px] border-b-[#817f81] text-[#f8f9fa]">
       <div className="w-[90%] mx-auto flex items-center justify-start py-4">
         <a href="/" className="flex items-center flex-shrink-0">
           <img
@@ -29,10 +25,7 @@ const Header: React.FC = () => {
         </a>
 
         <nav className="ml-4" aria-label="Menu principal">
-          <ul
-            className=" flex gap-[1.75rem] flex items-center gap-8 whitespace-nowrap list-none m-0 p-0"
-            
-          >
+          <ul className="flex items-center gap-[1.75rem] whitespace-nowrap list-none m-0 p-0">
             <li>
               <a href="/" className={getLinkClass("/")}>
                 Início
@@ -51,6 +44,11 @@ const Header: React.FC = () => {
             <li>
               <a href="/equipe" className={getLinkClass("/equipe")}>
                 Equipe
+              </a>
+            </li>
+            <li>
+              <a href="/sobre" className={getLinkClass("/sobre")}>
+                Sobre
               </a>
             </li>
           </ul>
