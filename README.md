@@ -71,18 +71,19 @@ testeFront/
 1. Clone o repositório:
    ```bash
    git clone https://github.com/ChallengeFiap1tdspo/terceira-sprint-front.git
+2. cd terceira-sprint-front
 
-2.Acesse a pasta do projeto:
+3.Acesse a pasta do projeto:
 cd testeFront
 
 
-3.Instale as dependências:
+4.Instale as dependências:
 npm install
 
 
-4.Execute a aplicação:
+5.Execute a aplicação:
 npm run dev
 
 
-5.Acesse no navegador:
+6.Acesse no navegador:
 http://localhost:5173
