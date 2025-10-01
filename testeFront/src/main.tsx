@@ -11,6 +11,7 @@ import PrimeiroContato from "./routes/PrimeiroContato";
 import Ajuda from "./routes/Ajuda";
 import Faq from "./routes/Faq";
 import Integrantes from "./routes/Integrantes";
+import Sobre from "./routes/Sobre"; 
 
 import "../global.css";
 
@@ -27,6 +28,7 @@ const router = createBrowserRouter([
       { path: "ajuda", element: <Ajuda /> },
       { path: "faq", element: <Faq /> },
       { path: "equipe", element: <Integrantes /> },
+      { path: "sobre", element: <Sobre /> }, // <-- nova rota
     ],
   },
 ]);
