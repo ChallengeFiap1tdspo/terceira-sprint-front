@@ -87,3 +87,7 @@ npm run dev
 
 6.Acesse no navegador:
 http://localhost:5173
+
+
+## Acesse nosso vídeo explicativo no YouTube: 
+https://youtu.be/zxUSkoI44d0?si=Hk_X4ccS_KzBIGyd
